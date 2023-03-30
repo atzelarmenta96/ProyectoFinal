@@ -5,7 +5,7 @@ public class PruebaDeSabor {
     public static void main(String[] args){
         Pastel pastel = new Pastel();
         pastel.setPrecio(400);
-        System.out.println("Sabor de Pastel Basico: " + pastel.getSabor());
+        System.out.println("Sabor de Pastel Basico: " + pastel.getSaboractual());
         System.out.println("Costo del Pastel " + "$" + pastel.getPrecio());
 
         PastelFiestaCumple pastelFiestaCumple = new PastelFiestaCumple();
@@ -15,7 +15,8 @@ public class PruebaDeSabor {
         System.out.println("Cantidad de velas en el Pastel: " + pastelFiestaCumple.getVelas());
         System.out.println("Costo de Pastel de Cumpleaños " + "$" + pastelFiestaCumple.getPrecio());
 
-        PastelBoda pastelBoda = new PastelBoda();
+        PastelBoda pastelBoda;
+        pastelBoda = new PastelBoda();
         pastelBoda.setPrecio(1500.5);
         pastelBoda.setSabor("Piña Colada");
         pastelBoda.setNiveles(4);
